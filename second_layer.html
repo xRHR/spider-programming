@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Second layer</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <div class="content">
+            <h1>Second layer</h1>
+            <p><img src="second_layer.png" alt="All non-yellow edges should be solved"></p>
+            <p>Find an edge piece in the top layer without yellow as either of its 2 colors.</p>
+            <p>Turn the top so that it matches a center.</p>
+            <p>Face the piece and check if the top color matches the right center or left center.</p>
+            <p><img src="sl1.png" alt="Put non-yellow edge on top of the matching center "></p>
+            <p>If it matches the right side, do the following moves:</p>
+            <p><img src="sl2.png" alt="U (R U R' U') y (L' U' L U)"></p>
+            <p>How to memorize this algorithm:</p>
+            <p><ol>
+                <li>Turn the top with your right hand</li>
+                <li>Do the right 4-moves</li>
+                <li>Rotate the cube to face the right side</li>
+                <li>Do the left 4-moves</li>
+            </ol></p>
+            <p>If it matches the left side, do the following moves:</p>
+            <p><img src="sl3.png" alt="U' (L' U' L U) y' (R U R' U')"></p>
+            <p>How to memorize this algorithm:</p>
+            <p><ol>
+                <li>Turn the top with your left hand</li>
+                <li>Do the left 4-moves</li>
+                <li>Rotate the cube to face the left side</li>
+                <li>Do the right 4-moves</li>
+            </ol></p>
+            <p>Repeat this until all of the 2nd layer edges are solved.</p>
+            <p>If an edge you are looking for is stuck somewhere in the 2nd layer, move any edge into its spot using one of the 2 algorithms above. This will cause the edge to come out into the top layer. The example solve video above shows how this is done.</p>
+            
+        </div>
+        <div class="references">
+            <p>References:</p>
+            <ol>
+                <li>3x3 Tutorial J Perm | Speedcubing Tutorials https://jperm.net/3x3 (18.02.2023)</li>
+                <li>How To Solve A Rubik's Cube Easily https://cubesolve.com/ (18.02.2023)</li>
+                <li>How to solve a Rubik's cube | 5 Easy Steps https://www.speedcube.com.au/pages/how-to-solve-a-rubiks-cube (18.02.2023)</li>
+            </ol>
+        </div>
+        <div class="copyright">
+            <div>
+                © RCSM
+            </div>
+        </div>
+    </body>
+</html>
